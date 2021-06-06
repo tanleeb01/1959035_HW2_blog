@@ -1,0 +1,361 @@
+html {
+    overflow: scroll;
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+}
+
+::-webkit-scrollbar {
+    width: 0px;
+    background: transparent;
+    display: none;
+}
+
+body *{
+    transition: all 0.5s ease;
+}
+
+@font-face {
+    font-family: 'header';
+    src: url("fonts/Yipes.otf");
+}
+
+@font-face {
+    font-family: 'body';
+    src: url("fonts/Manuale\ SemiBold.ttf");
+}
+
+body {
+    background-size: cover;
+    background-color: #E4EEE6;
+    background-image: url("../imgs/css/background.png");
+    background-position-x: 100%;
+    background-position-y: 0%;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    padding-top: 10vh;
+}
+
+#carousel .container{
+    padding: 0!important;
+    margin: 0!important;
+    width: 100%;
+    height: 100%;
+}
+
+.carousel{
+    padding: 0!important;
+    margin: 0!important;
+    width: 100vw;
+}
+
+.carousel img{
+    width: 100%;
+}
+
+.post_preview{
+    margin: 20px 0 20px 0;
+    padding: 30px;
+}
+
+.post_preview:hover{
+    transform: scale(1.05);
+}
+
+.post_preview .preview_author{
+    color: #ECAAA1;
+}
+
+h2, h3, a, p, label, input, textarea, button, .comment_time{
+    font-family: 'body'!important;
+    font-size: 20px!important;
+    text-decoration: none;
+}
+
+p{    
+  text-align: justify;
+}
+
+h1, .commenter{
+    font-family: 'header'!important;
+    font-size: 50px;
+    color: black;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+a{
+    color: #A7D0BC;
+}
+
+a:hover{
+    text-decoration: none;
+}
+
+input{
+    background: transparent!important;
+    border: 1px solid black;  
+    border-top-right-radius: 20px;
+    border-top-left-radius: 20px;
+}
+
+nav, footer {
+    backdrop-filter: blur(10px);
+    background-color: rgba(255, 255, 255, 0.3); 
+}
+
+::placeholder{
+    color: #899598!important;
+}
+
+.nav-links{
+    color: black!important;
+}
+
+.post_thumbnail_border {
+    display: inline-block;
+    position: relative;
+}
+
+.post_thumbnail_border::before {
+    position: absolute;
+    width: 102%;
+    height: 110%;
+    bottom: 5%;
+    left: -4%;
+    border: 2px solid #FAEACB;    
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    content: '';
+}
+
+.post_thumbnail{
+    width:100%!important;
+    height:100px!important;
+    object-fit: cover;    
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+}
+
+#index_posts{
+    margin-bottom: 20vh;
+}
+
+.jumbotron {
+    padding: 0!important;
+    height:60vh;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+    overflow: hidden; 
+}
+
+#post_title{
+    text-shadow: 2px 2px #E4EEE6;
+}
+
+#post_content{
+    padding: 10px 30px 10px 30px!important;
+}
+
+#comment_form{
+    padding: 5vh 5vw 0 5vh;
+}
+
+#comment_form textarea{
+    width: 100%;
+    background: transparent;
+    border-top-right-radius: 20px;
+    border-top-left-radius: 20px;
+    border: 1.1px solid black!important;
+}
+
+#comment_form textarea:focus{ 
+    backdrop-filter: blur(5px);
+    border: none;
+}
+
+.button-2{ 
+    width: fit-content;   
+    min-width: 50px;
+    height: fit-content;   
+    position: relative;    
+    margin-right: 10px;
+    margin-bottom: 20px;
+}
+
+.button-2 .border{
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    border-radius: 50%;
+    border: 1.1px solid black!important;
+}
+
+.button-2 .content{
+    background: transparent;
+    border: none;
+}
+
+.button-2:hover>.border{     
+    border: 0.3px solid #F7DBD7!important;
+    transform: scale(0.9) rotate(-5deg);  
+    backdrop-filter: blur(5px);
+}
+
+.button-2:hover>.content{
+    transform: scale(1.1);
+}
+
+#comment_div{
+    height: 60vh;
+    padding: 5vh 5vw 5vh 5vw;
+    overflow: scroll;
+}
+
+.comment_info_div {
+    position: relative;
+    width: 200px;
+    height: 200px;
+}
+
+.comment_info{
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.comment_thumbnail_div{
+    position:absolute;
+    top: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.comment_thumbnail_border_wrapper{
+    width: 70%;
+}
+
+.comment_thumbnail_border{
+    display: inline-block;
+    position: relative;
+}
+
+.comment_thumbnail_border::before {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    bottom: 5%;
+    left: -4%;
+    border: 2px solid #899598;  
+    border-radius: 50%;
+    content: '';  
+}
+
+.comment_thumbnail{    
+    border-radius: 50%;
+    width: 100%!important;
+}
+
+.commenter{
+    font-size: 13px;
+    fill: #A7D0BC;
+}
+
+.comment_time{
+    font-size: 9px!important;
+    fill:#F7DBD7;
+}
+
+.button-1{ 
+    width: fit-content;
+    min-width: 50px;
+    height: 30px;
+    position: relative;    
+    margin: 5px;
+    background: transparent;
+    border-radius: 50%;
+    border: 1.1px solid black!important;
+}
+
+#previewImg {
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+#user_img_background{
+    background-color: #FCFCFC;
+}
+
+.user_img{
+    width: 30%;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.user_info{    
+    padding: 10px 30px 0 30px!important;
+}
+
+blockquote {
+    background: #F7DBD7;
+    border-left: 10px solid #899598;
+    margin: 1.5em 10px;
+    padding: 0.5em 10px;
+    quotes: "\201C""\201D""\2018""\2019";
+}
+blockquote:before {
+    color: #899598;
+    content: open-quote;
+    font-size: 4em;
+    line-height: 0.1em;
+    margin-right: 0.25em;
+    vertical-align: -0.4em;
+}
+
+blockquote p {
+    display: inline;
+}
+
+#user_posts{
+    margin-top: 2.5vh;
+    padding-top: 5vh;
+    margin-bottom: 2.5vh;
+    overflow: scroll;
+    max-height: 60vh;
+}
+
+#post_search{
+    height: 90vh!important;
+    padding: 0 50px 0 50px;
+    overflow: scroll;
+}
+
+.jumbotron #previewImg{
+    width: 100%!important;
+    height: 100%!important;
+    border-radius: 0!important;
+}
+
+#form_post{
+    padding: 10px 30px 10px 30px!important;
+}
+
+#form_post textarea{
+    width: 100%;
+    height: 80vh;
+}
+
+footer .btn{
+    border-radius: 50%;
+    min-width: 50px;
+    max-height: 30px;
+    margin: 0;
+    padding: 0;
+}
+
+
