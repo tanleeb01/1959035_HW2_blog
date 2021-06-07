@@ -19,11 +19,16 @@
 <body>
 
 <nav class="navbar navbar-expand-lg navbar-light fixed-top">
-  <button class="navbar-toggler float-right" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo03" aria-controls="navbarTogglerDemo03" aria-expanded="false" aria-label="Toggle navigation">
-    <span class="navbar-toggler-icon"></span>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <div id="nav-icon3">
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
   </button>
 
-  <div class="collapse navbar-collapse" id="navbarTogglerDemo03">
+  <div class="collapse navbar-collapse" id="navbarNav">
     <ul class="navbar-nav mr-auto mt-2 mt-lg-0">        
         <li class="nav-item">            
             <a class="nav-link" href="index.php">Home</a>

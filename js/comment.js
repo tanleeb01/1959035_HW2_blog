@@ -14,13 +14,13 @@ setInterval(function(){
         xhr.onload = function() {
             if(this.status == 200) {
                 comment_list = JSON.parse(this.responseText);
-                printComment(comment_list); 
+                printComment(comment_list);
             }
         }
         xhr.send();
     }
-    else if (document.querySelector("#comment_div").querySelectorAll("input").length < 1)pausePrintComment = false;
-}, 300);
+    //else if (document.querySelector("#comment_div").querySelectorAll("input").length < 1)pausePrintComment = false;
+},1500);
 
 commentform.addEventListener("submit", e=> {
     e.preventDefault();
@@ -58,7 +58,7 @@ function printComment(comment_list){
         else btn_icon = `<i class="bi bi-heart">${comment['comment_likes']}</i>`;
 
         innerhtml+=`
-        <div class="container d-flex">
+        <div class="container d-lg-flex">
             <div class="comment_info_div"> 
                 <div class="comment_thumbnail_div d-flex justify-content-center align-items-center">
                     <div class= "comment_thumbnail_border_wrapper">
@@ -91,7 +91,7 @@ function printComment(comment_list){
                 </div>
             </div>
             
-            <div class="d-flex flex-column justify-content-center">
+            <div class="comment_content_div d-flex flex-column justify-content-center">
                 <p>${comment['comment_content']}</p>
 
                 <div class="btns_div">

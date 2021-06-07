@@ -1,6 +1,5 @@
 <?php
     require_once 'func/filemanager.php';
-    var_dump($_POST);
     $errors = [];
 
     if (!empty($_GET)){
